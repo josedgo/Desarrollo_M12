@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="proyectoM12:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/proyectoM12_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="proyectoM12/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="proyectoM12" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="gson-2.8.2" />
+          <element id="library" level="project" name="postgresql-42.1.4.jre7" />
+          <element id="library" level="project" name="javax.xml.parsers-1_1" />
+          <element id="library" level="project" name="jaxp-api-1.4.5" />
+          <element id="library" level="project" name="org.eclipse.persistence.moxy" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

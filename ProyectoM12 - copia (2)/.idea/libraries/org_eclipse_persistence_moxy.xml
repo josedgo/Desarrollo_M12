@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.eclipse.persistence.moxy">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Documents/Librerias/org.eclipse.persistence.moxy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
