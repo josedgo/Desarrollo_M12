@@ -208,7 +208,7 @@ public class Configuracion {
     public String guardarFiltrosDeUsuario(ContenedorIdListaFiltros contenedor){
         try{
             Integer id=contenedor.getId();
-            String estado="";
+            String estado="OK";
             String query ="SELECT FILTRO.* FROM FILTRO, USU_FIL WHERE USU_FIL.ID_USU="+id+" AND USU_FIL.ID_FIL=FILTRO.FIL_ID";
             ArrayList<Filtro> listaFiltrosBD =consultarFiltrosBD(query);
 
@@ -229,11 +229,11 @@ public class Configuracion {
 
             for( int i = 0 ; i < listaDeleteBD.size() ; i++ ){
                 String transDelete="DELETE FROM USU_FIL WHERE ID_USU="+id+" AND ID_FIL="+listaDeleteBD.get(i);
-                estado=ejecutarEnBD(transDelete);
+                ejecutarEnBD(transDelete);
             }
             for( int i = 0 ; i < listaInsertsBD.size() ; i++ ){
                 String transInserts="INSERT INTO USU_FIL(ID_USU,ID_FIL) VALUES ("+id+","+listaInsertsBD.get(i)+")";
-                estado=ejecutarEnBD(transInserts);
+                ejecutarEnBD(transInserts);
             }
 
             return gson.toJson(estado);
