@@ -12,29 +12,34 @@ import 'rxjs/add/operator/do';
 @Injectable()
 export class ServicioProvider {
 
- 
+
   constructor(public http: Http) {
     console.log('Hello ServicioProvider Provider');
   }
-  
- 
+
+
     postRequest() {
       var headers = new Headers();
-      //headers.append("Accept", 'application/json');
-      headers.append('Content-Type', 'application/json' );
+      headers.append('Access-Control-Allow-Origin' , '*');
+      headers.append('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT');
+      headers.append('Accept','application/json');
+      headers.append('content-type','application/json');
+
       let options = new RequestOptions({ headers: headers });
-   
+
       let postParams = {"id":1,"listaFiltros":[{"id":7,"tipo":"filtro","descripcion":"Contenido Musical - Reggaeton"}
       ]};
-      
-      this.http.post("http://localhost:8080/proyectoM12_war_exploded/Configuracion/guardarFiltrosDeUsuario", postParams, options)
+
+      return new Promise ((resolve, reject) => {
+      this.http.post("http://localhost:8080/Service_war_exploded/Moderacion/guardar", postParams, options)
         .subscribe(data => {
           console.log(data['_body']);
          }, error => {
           console.log(error);// Error getting the data
         });
+      });
     }
-  
+
 
 
   getData(){
@@ -43,6 +48,6 @@ export class ServicioProvider {
     .subscribe(data => {
       console.log(data);
     });
-    
+
   }
 }
