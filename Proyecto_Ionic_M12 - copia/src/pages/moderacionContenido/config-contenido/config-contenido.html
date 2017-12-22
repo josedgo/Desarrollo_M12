@@ -5,62 +5,63 @@
       </ion-title>
     </ion-navbar>
   </ion-header>
-  
+
   <ion-content padding>
   <p>En esta sección podrá bloquear el contenido que no desea ver, las visualizaciones se ajustarán al modelado establecido.</p>
+   <form (ngSubmit) = "guardarConfiguracion()">
   <ion-item-group>
     <ion-item-divider color="light">
         <ion-label>Filtros Individuales</ion-label>
-        <ion-toggle [(ngModel)]="filtrosIndividuales" (ionChange)="cambiarFiltrosIndividuales()"></ion-toggle>
+        <ion-toggle ></ion-toggle>
       </ion-item-divider>
       <ion-item>
         <ion-label>Contenido Musical - Reggaetón</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoReggaeton" (ionChange)="cambiarContenidoReggaeton()"></ion-checkbox>
+        <ion-checkbox [(ngModel)]="reggae.valor" [ngModelOptions]="{standalone: true}" ></ion-checkbox>
       </ion-item>
       <ion-item>
         <ion-label>Contenido de Terrorismo</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoTerrorismo" (ionChange)="cambiarContenidoTerrorismo()"></ion-checkbox>
+        <ion-checkbox [(ngModel)]="terrorismo.valor" [ngModelOptions]="{standalone: true}" ></ion-checkbox>
       </ion-item>
       <ion-item>
         <ion-label>Contenido de Terror</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoTerror" (ionChange)="cambiarContenidoTerror()"></ion-checkbox>
+        <ion-checkbox [(ngModel)]="terror.valor" [ngModelOptions]="{standalone: true}"></ion-checkbox>
       </ion-item>
       <ion-item>
         <ion-label>Contenido de Sexo</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoSexo" (ionChange)="cambiarContenidoSexo()"></ion-checkbox>
+        <ion-checkbox [(ngModel)]="sexo.valor" [ngModelOptions]="{standalone: true}" ></ion-checkbox>
       </ion-item>
       <ion-item>
         <ion-label>Contenido Pornográfico</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoPornografico" (ionChange)="cambiarContenidoPornografico()"></ion-checkbox>
+        <ion-checkbox [(ngModel)]="porno.valor" [ngModelOptions]="{standalone: true}"></ion-checkbox>
       </ion-item>
       <ion-item>
         <ion-label>Contenido Sangriento</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoSangriento" (ionChange)="cambiarContenidoSangriento()"></ion-checkbox>
+        <ion-checkbox [(ngModel)]="sangriento.valor" [ngModelOptions]="{standalone: true}" ></ion-checkbox>
       </ion-item>
     </ion-item-group>
     <hr><br>
     <ion-item-group>
       <ion-item-divider color="light">
           <ion-label>Estructuras de Filtros</ion-label>
-          <ion-toggle [(ngModel)]="estructurasFiltros" (ionChange)="cambiarEstructurasFiltros()"></ion-toggle>
+          <ion-toggle  ></ion-toggle>
       </ion-item-divider>
       <p>En esta sección se ponen a su disposición estructuras con filtros agrupados para mayor comodidad.</p>
         <ion-item>
           <ion-label>Control Parental</ion-label>
-          <ion-checkbox [(ngModel)]="controlParental" (ionChange)="cambiarControlParental()"></ion-checkbox>
+          <ion-checkbox [(ngModel)]="parental.valor" [ngModelOptions]="{standalone: true}" ></ion-checkbox>
         </ion-item>
         <ion-item>
           <ion-label>Violencia</ion-label>
-          <ion-checkbox [(ngModel)]="violencia" (ionChange)="cambiarViolencia()"></ion-checkbox>
+          <ion-checkbox [(ngModel)]="violenciaa.valor" [ngModelOptions]="{standalone: true}" ></ion-checkbox>
         </ion-item>
         <ion-item>
           <ion-label>Perfil de Adulto</ion-label>
-          <ion-checkbox [(ngModel)]="perfilAdulto" (ionChange)="cambiarPerfilAdulto()"></ion-checkbox>
+          <ion-checkbox [(ngModel)]="perfil.valor" [ngModelOptions]="{standalone: true}" ></ion-checkbox>
         </ion-item>
     </ion-item-group>
     <hr>
+     <button ion-button type="submit">Guardar la COnf</button>
+   </form>
   </ion-content>
-  
-  <ion-footer padding>
-    <button ion-button color="verdeViUCAB" full (click)="guardarConfiguracion()">Guardar</button>
-  </ion-footer>
+
+

@@ -17,70 +17,49 @@ import { ServicioProvider } from '../../../providers/servicio/servicio';
 })
 export class ConfigContenidoPage {
 
-    filtrosIndividuales: boolean;
-    estructurasFiltros: boolean;
-    contenidoReggaeton: boolean;
-    contenidoTerrorismo: boolean;
-    contenidoTerror: boolean;
-    contenidoSexo: boolean;
-    contenidoPornografico: boolean;
-    contenidoSangriento: boolean;
-    controlParental: boolean;
-    violencia: boolean;
-    perfilAdulto: boolean;
+  filtrosIndividuales: boolean=false;
+  estructurasFiltros: boolean = false;
+  contenidoReggaeton: boolean = false;
+  contenidoTerrorismo: boolean =false;
+  contenidoTerror: boolean = false;
+  contenidoSexo: boolean = false;
+  contenidoPornografico: boolean = false;
+  contenidoSangriento: boolean = false;
+  controlParental: boolean=false;
+  violencia: boolean = false;
+  perfilAdulto: boolean=false;
+  variable:boolean=false;
+
+
+    reggae ={id:1,tipo:'filtro-simple',descripcion:'reggeton',valor:this.contenidoReggaeton};
+    terrorismo ={id:2,tipo:'filtro-simple',descripcion:'terrorismo',valor:this.contenidoTerrorismo};
+    terror ={id:3,tipo:'filtro-simple',descripcion:'terror',valor:this.contenidoTerror};
+    sexo ={id:4,tipo:'filtro-simple',descripcion:'sexo',valor:this.contenidoSexo};
+    porno ={id:5,tipo:'filtro-simple',descripcion:'porno',valor:this.contenidoPornografico};
+    sangriento ={id:6,tipo:'filtro-simple',descripcion:'sangriento',valor:this.contenidoSangriento};
+    parental ={id:7,tipo:'estructura',descripcion:'control - parental',valor:this.controlParental};
+    violenciaa ={id:8,tipo:'estructura',descripcion:'Violencia',valor:this.violencia};
+    perfil ={id:9,tipo:'estructura',descripcion:'perfil cx',valor:this.perfilAdulto};
+    filtros =[];
+
 
     constructor(public navCtrl: NavController, public navParams: NavParams,public http: Http, public servicio:ServicioProvider) {
+
     }
 
-    //Método de habilitar/deshabilitar Todas los Filtros
-    public cambiarFiltrosIndividuales() {
-      console.log("filtrosIndividuales cambiado a: "+this.filtrosIndividuales);
-    }
 
-    //Métodos de los Checkbox de Estructuras
-    public cambiarContenidoReggaeton() {
-      console.log("contenidoReggaeton cambiado a: "+this.contenidoReggaeton);
-    }
-    public cambiarContenidoTerrorismo() {
-      console.log("contenidoTerrorismo cambiado a: "+this.contenidoTerrorismo);
-    }
-    public cambiarContenidoTerror() {
-      console.log("contenidoTerror cambiado a: "+this.contenidoTerror);
-    }
-    public cambiarContenidoSexo() {
-      console.log("contenidoSexo cambiado a: "+this.contenidoSexo);
-    }
-    public cambiarContenidoPornografico() {
-      console.log("contenidoPornografico cambiado a: "+this.contenidoPornografico);
-    }
-    public cambiarContenidoSangriento() {
-      console.log("contenidoSangriento cambiado a: "+this.contenidoSangriento);
-    }
 
-    //Método de habilitar/deshabilitar Todas las Estructuras
-    public cambiarEstructurasFiltros() {
-      console.log("estructurasFiltros cambiado a: "+this.estructurasFiltros);
-    }
 
-    //Métodos de los Checkbox de Estructuras
-    public cambiarControlParental() {
-      console.log("controlParental cambiado a: "+this.controlParental);
-    }
-    public cambiarViolencia() {
-      console.log("violencia cambiado a: "+this.violencia);
-    }
-    public cambiarPerfilAdulto() {
-      console.log("perfilAdulto cambiado a: "+this.perfilAdulto);
-    }
-
-    //Método de Guardar Configuración
     public guardarConfiguracion() {
-      this.guardarConfig();
-      console.log("Se ejecutó Guardar Configuración... ");
+     // this.guardarConfig();
+      //console.log("Se ejecutó Guardar Configuración... ");
+    this.filtros= [this.reggae,this.terrorismo,this.terror,this.sexo,this.porno,this.sangriento,this.parental,this.violenciaa,this.perfil];
+    console.log(this.filtros);
+    this.guardarConfig();
     }
 
     guardarConfig() {
-        this.servicio.postRequest().then((result) => {
+        this.servicio.postRequest(this.filtros).then((result) => {
           console.log(result);
         }, (err) =>{
           console.log(err);

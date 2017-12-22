@@ -18,7 +18,7 @@ export class ServicioProvider {
   }
 
 
-    postRequest() {
+    postRequest(datos) {
       var headers = new Headers();
       headers.append('Access-Control-Allow-Origin' , '*');
       headers.append('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT');
@@ -27,13 +27,14 @@ export class ServicioProvider {
 
       let options = new RequestOptions({ headers: headers });
 
-      let postParams = {"id":1,"listaFiltros":[{"id":7,"tipo":"filtro","descripcion":"Contenido Musical - Reggaeton"}
-      ]};
-
+     let postParams = {"id":1,"listaFiltros":datos};
+     console.log(postParams);
+     alert("");
       return new Promise ((resolve, reject) => {
+        alert("enviado filtros...");
       this.http.post("http://localhost:8080/Service_war_exploded/Moderacion/guardar", postParams, options)
         .subscribe(data => {
-          console.log(data['_body']);
+          console.log(data);
          }, error => {
           console.log(error);// Error getting the data
         });
