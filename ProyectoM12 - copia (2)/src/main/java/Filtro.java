@@ -6,6 +6,7 @@ public class Filtro {
     private Integer id;
     private String tipo;
     private String descripcion;
+    private boolean valor;
 
     public Filtro() {
 
@@ -33,5 +34,13 @@ public class Filtro {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public boolean isValor() {
+        return valor;
+    }
+
+    public void setValor(boolean valor) {
+        this.valor = valor;
     }
 }
