@@ -29,7 +29,11 @@ export class ConfigContenidoPage {
   violencia: boolean = false;
   perfilAdulto: boolean=false;
   variable:boolean=false;
-
+  discrimina:boolean=false;
+  religio:boolean=false;
+  politicab:boolean=false;
+  maqui:boolean=false;
+  infa:boolean=false;
 
     reggae ={id:1,tipo:'filtro-simple',descripcion:'reggeton',valor:this.contenidoReggaeton};
     terrorismo ={id:2,tipo:'filtro-simple',descripcion:'terrorismo',valor:this.contenidoTerrorismo};
@@ -37,9 +41,17 @@ export class ConfigContenidoPage {
     sexo ={id:4,tipo:'filtro-simple',descripcion:'sexo',valor:this.contenidoSexo};
     porno ={id:5,tipo:'filtro-simple',descripcion:'porno',valor:this.contenidoPornografico};
     sangriento ={id:6,tipo:'filtro-simple',descripcion:'sangriento',valor:this.contenidoSangriento};
+    discriminacion ={id:10,tipo:'filtro-simple',descripcion:'descriminacion',valor:this.discrimina};
+   religion ={id:11,tipo:'filtro-simple',descripcion:'religion',valor:this.religio};
+   politica ={id:12,tipo:'filtro-simple',descripcion:'politica',valor:this.politicab};
+
     parental ={id:7,tipo:'estructura',descripcion:'control - parental',valor:this.controlParental};
-    violenciaa ={id:8,tipo:'estructura',descripcion:'Violencia',valor:this.violencia};
-    perfil ={id:9,tipo:'estructura',descripcion:'perfil cx',valor:this.perfilAdulto};
+    perfil ={id:9,tipo:'estructura',descripcion:'perfil adulto',valor:this.perfilAdulto};
+    infantil ={id:13,tipo:'estructura',descripcion:'perfil infantil',valor:this.infa};
+
+    violenciaa ={id:8,tipo:'filtro-simple',descripcion:'Violencia',valor:this.violencia};
+    maquillaje={id:13,tipo:'filtro-simple',descripcion:'maquillaje',valor:this.maqui};
+
     filtros =[];
 
 
@@ -53,7 +65,8 @@ export class ConfigContenidoPage {
     public guardarConfiguracion() {
      // this.guardarConfig();
       //console.log("Se ejecutó Guardar Configuración... ");
-    this.filtros= [this.reggae,this.terrorismo,this.terror,this.sexo,this.porno,this.sangriento,this.parental,this.violenciaa,this.perfil];
+    this.filtros= [this.reggae,this.terrorismo,this.terror,this.sexo,this.porno,this.sangriento,this.parental,this.violenciaa,this.perfil,
+    this.discriminacion,this.maquillaje,this.politica,this.religion,this.infantil];
     console.log(this.filtros);
     this.guardarConfig();
     }
