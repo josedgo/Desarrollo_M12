@@ -17,12 +17,14 @@ export class ConfigContenidoPage {
 
     filtrosIndividuales: boolean;
     estructurasFiltros: boolean;
-    contenidoReggaeton: boolean;
+    contenidoViolencia: boolean;
     contenidoTerrorismo: boolean;
-    contenidoTerror: boolean;
+    contenidoDiscrim: boolean;
     contenidoSexo: boolean;
-    contenidoPornografico: boolean;
+    contenidoReligion: boolean;
     contenidoSangriento: boolean;
+    contenidoMaqui:boolean;
+    contenidoPolitica: boolean;
     controlParental: boolean;
     violencia: boolean;
     perfilAdulto: boolean;
@@ -36,23 +38,29 @@ export class ConfigContenidoPage {
     }
     
     //Métodos de los Checkbox de Estructuras
-    public cambiarContenidoReggaeton() {
-      console.log("contenidoReggaeton cambiado a: "+this.contenidoReggaeton); 
+    public cambiarContenidoViolencia() {
+      console.log("contenidoViolencia cambiado a: "+this.contenidoViolencia); 
     }
     public cambiarContenidoTerrorismo() {
       console.log("contenidoTerrorismo cambiado a: "+this.contenidoTerrorismo); 
     }
-    public cambiarContenidoTerror() {
-      console.log("contenidoTerror cambiado a: "+this.contenidoTerror); 
+    public cambiarContenidoDiscrim() {
+      console.log("contenidoDiscrim cambiado a: "+this.contenidoDiscrim); 
     }
     public cambiarContenidoSexo() {
       console.log("contenidoSexo cambiado a: "+this.contenidoSexo); 
     }
-    public cambiarContenidoPornografico() {
-      console.log("contenidoPornografico cambiado a: "+this.contenidoPornografico); 
+    public cambiarContenidoReligion() {
+      console.log("contenidoReligion cambiado a: "+this.contenidoReligion); 
     }
     public cambiarContenidoSangriento() {
       console.log("contenidoSangriento cambiado a: "+this.contenidoSangriento); 
+    }
+      public cambiarContenidoPolitica() {
+      console.log("contenidoPolitica cambiado a: "+this.contenidoPolitica); 
+    }
+      public cambiarContenidoMaqui() {
+      console.log("contenidoMaqui cambiado a: "+this.contenidoMaqui); 
     }
   
     //Método de habilitar/deshabilitar Todas las Estructuras

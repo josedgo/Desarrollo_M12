@@ -7,51 +7,62 @@
   </ion-header>
   
   <ion-content padding>
-  <p>En esta sección podrá bloquear el contenido que no desea ver, las visualizaciones se ajustarán al modelado establecido.</p>
+  <p align="center">IMPORTANTE: </p>
+  <p align="justify">  En esta sección podrá bloquear el contenido que no desea ver, las visualizaciones se ajustarán a los parámetros establecidos.</p>
   <ion-item-group>
     <ion-item-divider color="light">
-        <ion-label>Filtros Individuales</ion-label>
-        <ion-toggle [(ngModel)]="filtrosIndividuales" (ionChange)="cambiarFiltrosIndividuales()"></ion-toggle>
+        <ion-label>Filtros Individuales </ion-label>
+           <ion-toggle [(ngModel)]="filtrosIndividuales" (ionChange)="cambiarFiltrosIndividuales()"></ion-toggle>
+           <ion-icon ios="ios-add" md="md-add"></ion-icon>
       </ion-item-divider>
       <ion-item>
-        <ion-label>Contenido Musical - Reggaetón</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoReggaeton" (ionChange)="cambiarContenidoReggaeton()"></ion-checkbox>
+        <ion-label>Violencia</ion-label>
+        <ion-checkbox [(ngModel)]="contenidoViolencia" (ionChange)="cambiarContenidoViolencia()"></ion-checkbox>
       </ion-item>
       <ion-item>
-        <ion-label>Contenido de Terrorismo</ion-label>
+        <ion-label>Terrorismo</ion-label>
         <ion-checkbox [(ngModel)]="contenidoTerrorismo" (ionChange)="cambiarContenidoTerrorismo()"></ion-checkbox>
       </ion-item>
       <ion-item>
-        <ion-label>Contenido de Terror</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoTerror" (ionChange)="cambiarContenidoTerror()"></ion-checkbox>
+        <ion-label>Discriminación</ion-label>
+        <ion-checkbox [(ngModel)]="contenidoDiscrim" (ionChange)="cambiarContenidoDiscrim()"></ion-checkbox>
       </ion-item>
       <ion-item>
-        <ion-label>Contenido de Sexo</ion-label>
+        <ion-label>Sexo y Pornografía</ion-label>
         <ion-checkbox [(ngModel)]="contenidoSexo" (ionChange)="cambiarContenidoSexo()"></ion-checkbox>
       </ion-item>
       <ion-item>
-        <ion-label>Contenido Pornográfico</ion-label>
-        <ion-checkbox [(ngModel)]="contenidoPornografico" (ionChange)="cambiarContenidoPornografico()"></ion-checkbox>
+        <ion-label>Religión</ion-label>
+        <ion-checkbox [(ngModel)]="contenidoReligion" (ionChange)="cambiarContenidoReligion()"></ion-checkbox>
       </ion-item>
       <ion-item>
-        <ion-label>Contenido Sangriento</ion-label>
+        <ion-label>Gore y Cont. Sangriento</ion-label>
         <ion-checkbox [(ngModel)]="contenidoSangriento" (ionChange)="cambiarContenidoSangriento()"></ion-checkbox>
       </ion-item>
+      <ion-item>
+          <ion-label>Política e Ideología</ion-label>
+          <ion-checkbox [(ngModel)]="contenidoPolitica" (ionChange)="cambiarContenidoPolitica()"></ion-checkbox>
+        </ion-item>
+      <ion-item>
+          <ion-label>Maquillaje y Tutoriales</ion-label>
+          <ion-checkbox [(ngModel)]="contenidoMaqui" (ionChange)="cambiarContenidoMaqui()"></ion-checkbox>
+        </ion-item>
     </ion-item-group>
     <hr><br>
     <ion-item-group>
       <ion-item-divider color="light">
-          <ion-label>Estructuras de Filtros</ion-label>
+          <ion-label>Estructuras Especiales</ion-label>
           <ion-toggle [(ngModel)]="estructurasFiltros" (ionChange)="cambiarEstructurasFiltros()"></ion-toggle>
       </ion-item-divider>
-      <p>En esta sección se ponen a su disposición estructuras con filtros agrupados para mayor comodidad.</p>
+      <!--<p align="justify">En esta sección se ponen a su disposición estructuras con filtros agrupados para mayor comodidad.</p>-->
         <ion-item>
           <ion-label>Control Parental</ion-label>
           <ion-checkbox [(ngModel)]="controlParental" (ionChange)="cambiarControlParental()"></ion-checkbox>
         </ion-item>
         <ion-item>
-          <ion-label>Violencia</ion-label>
+          <ion-label>Perfil Infantil</ion-label>
           <ion-checkbox [(ngModel)]="violencia" (ionChange)="cambiarViolencia()"></ion-checkbox>
+          <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
         </ion-item>
         <ion-item>
           <ion-label>Perfil de Adulto</ion-label>
