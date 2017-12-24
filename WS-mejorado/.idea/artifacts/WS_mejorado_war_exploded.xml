@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WS-mejorado:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/WS_mejorado_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WS-mejorado/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WS-mejorado" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="gson-2.8.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
