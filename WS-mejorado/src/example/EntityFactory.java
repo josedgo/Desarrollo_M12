@@ -1,6 +1,7 @@
 package example;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 
 /**
@@ -10,12 +11,14 @@ import java.util.LinkedList;
 public class EntityFactory
 {
 
-    //final M08
-
     //M12
 
     static public Entity filtro (int id, String tipo, String descripcion,boolean valor){
         return new Filtro(id,tipo,descripcion,valor);
+    }
+
+    static public Entity video(Integer id, String titulo, String descripcion, String imagen, String url, Date fecha, Integer visitas, Integer usuario){
+        return new Video(id, titulo, descripcion, imagen, url, fecha, visitas, usuario);
     }
     //endregion
 }

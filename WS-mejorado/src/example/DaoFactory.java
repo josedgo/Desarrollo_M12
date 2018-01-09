@@ -8,10 +8,7 @@ package example;
 public class DaoFactory
 {
 
-
-    // M12
     static  public GetModeracionContenidoDao instanciarModeracionContenidoDao(){return new GetModeracionContenidoDao();}
 
-    //Fin M12
 }
 

@@ -9,5 +9,8 @@ import java.util.ArrayList;
 public interface IDaoModeracionContenido extends IDao {
 
     public ArrayList<Filtro> buscarFiltros(Integer id) throws SQLException;
+    public boolean compararPassword(Integer id, String password) throws SQLException;
+    public ArrayList<Video> buscarVideosPermitidos(Integer id) throws SQLException;
+    public ArrayList<Video> buscarYFiltrarVideos(Integer id,ArrayList<Video> listaVideos ) throws SQLException;
 
 }

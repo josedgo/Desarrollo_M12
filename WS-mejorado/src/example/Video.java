@@ -2,7 +2,7 @@ package example;
 
 import java.util.Date;
 
-public class Video {
+public class Video extends Entity{
     private Integer id;
     private String titulo;
     private String descripcion;
