@@ -4,7 +4,7 @@ package example;
 
 import java.io.Serializable;
 
-public class Filtro implements Serializable{
+public class Filtro extends Entity{
     private Integer id;
     private String tipo;
     private String descripcion;
@@ -12,6 +12,13 @@ public class Filtro implements Serializable{
 
     public Filtro() {
 
+    }
+
+    public Filtro(Integer id, String tipo, String descripcion, boolean valor) {
+        this.id = id;
+        this.tipo = tipo;
+        this.descripcion = descripcion;
+        this.valor = valor;
     }
 
     public Integer getId() {

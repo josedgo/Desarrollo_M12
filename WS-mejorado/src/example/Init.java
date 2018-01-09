@@ -15,7 +15,7 @@ public class Init extends Application{
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add( Configuracion.class );
+        h.add( M12_ModeracionContenido.class );
         return h;
     }
 }

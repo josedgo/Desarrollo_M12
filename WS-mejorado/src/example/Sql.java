@@ -1,16 +1,18 @@
 package example;
-
 import java.sql.*;
 
+/**
+ * Created by Daniel on 25/11/2017.
+ */
 public class Sql {
 
     private static Connection conInstance;
     private Connection _conn =bdConnect();
     private Statement _st;
     private ResultSet _rs;
-    private static String BD_USER = "postgres";
-    private static String BD_PASSWORD = "ViUCAB";
-    private static String BD_URL = "jdbc:postgresql://localhost/postgres";
+    private static String BD_USER = "viucab";
+    private static String BD_PASSWORD = "viucab";
+    private static String BD_URL = "jdbc:postgresql://localhost/viucabdb";
     private static String BD_CLASS_FOR_NAME = "org.postgresql.Driver";
 
     /**
