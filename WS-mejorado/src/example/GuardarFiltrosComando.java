@@ -27,7 +27,7 @@ public class GuardarFiltrosComando extends Command {
     public void execute() {
         try {
             GetModeracionContenidoDao dao =  DaoFactory.instanciarModeracionContenidoDao();
-            _resultado = dao.buscarYFiltrarVideos(id, listaFiltros);
+            _resultado = dao.guardarFiltrosEnBD(id, listaFiltros);
 
         }
         catch (Exception e){

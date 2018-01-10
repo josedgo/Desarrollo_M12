@@ -145,6 +145,8 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
     }
 
 
+
+
     public ArrayList<Video> buscarYFiltrarVideos(Integer id,  ArrayList<Video> listaVideos) throws SQLException {
         ArrayList<Video> listaVideosPermitidos=new ArrayList<>();
         ArrayList<Video> listaVideosFiltrados= new ArrayList<>();
@@ -186,6 +188,61 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
         return listaVideosFiltrados;
     }
 
+
+
+
+    public boolean guardarFiltrosEnBD(Integer id,  ArrayList<Filtro> listaFiltrosNuevos) throws SQLException {
+        ArrayList<Filtro> listaFiltrosBD= new ArrayList<>();
+        ArrayList<Integer> listaInsertsBD= new ArrayList<>();
+        ArrayList<Integer> listaDeleteBD= new ArrayList<>();
+        Connection conn= getConInstance();
+        PreparedStatement ps;
+        boolean estado=false;
+
+        try{
+            String query ="SELECT FILTRO.* FROM FILTRO, USU_FIL WHERE USU_FIL.ID_USU="+id+" AND USU_FIL.ID_FIL=FILTRO.FIL_ID";
+
+            ps = conn.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+
+            while(rs.next()){
+                Filtro resultado = (Filtro) EntityFactory.filtro(rs.getInt("fil_id"),rs.getString("fil_tipo"),
+                        rs.getString("fil_descripcion"),rs.getBoolean("fil_valor"));
+                listaFiltrosBD.add(resultado);
+            }
+
+            for( int i = 0 ; i < listaFiltrosNuevos.size() ; i++ ){
+                if (!(listaFiltrosBD.contains(listaFiltrosNuevos.get(i)))) {
+                    listaInsertsBD.add(listaFiltrosNuevos.get(i).getId());
+                }
+            }
+            for( int i = 0 ; i < listaFiltrosBD.size() ; i++ ){
+                if (!(listaFiltrosNuevos.contains(listaFiltrosBD.get(i)))) {
+                    listaDeleteBD.add(listaFiltrosBD.get(i).getId());
+                }
+            }
+
+            //Eliminando los filtros no marcados en la app
+            for( int i = 0 ; i < listaDeleteBD.size() ; i++ ){
+                String transDelete="DELETE FROM USU_FIL WHERE ID_USU="+id+" AND ID_FIL="+listaDeleteBD.get(i);
+                    ps = conn.prepareStatement(query);
+                    ps.executeQuery();
+            }
+            //Insertando solo los filtros nuevos que no estaban en BD
+            for( int i = 0 ; i < listaInsertsBD.size() ; i++ ){
+                String transInserts="INSERT INTO USU_FIL(ID_USU,ID_FIL) VALUES ("+id+","+listaInsertsBD.get(i)+")";
+                ps = conn.prepareStatement(query);
+                ps.executeQuery();
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Sql.bdClose(conn);
+        }
+
+        return estado;
+}
 
 
 }

@@ -85,53 +85,14 @@ public class M12_ModeracionContenido {
     @Produces("application/json")
     public String guardarFiltros(ContenedorIdListaFiltros contenedor){
             try {
-                Command commadModeracionContenido = CommandsFactory.instanciarFiltrarVideosComando(contenedor);
-                FiltrarVideosComando cmd = (FiltrarVideosComando) commadModeracionContenido;
+                Command commadModeracionContenido = CommandsFactory.instanciarGuardarFiltrosComando(contenedor);
+                GuardarFiltrosComando cmd = (GuardarFiltrosComando) commadModeracionContenido;
                 cmd.execute();
-                return gson.toJson(cmd.getVideosFiltrados());
+                return gson.toJson(cmd.getResultadoGuardado());
 
             } catch (Exception ex) {
                 return gson.toJson("ASD");
             }
-
-
-
-        try{
-            Integer id=contenedor.getId();
-            String estado="OK";
-            String query ="SELECT FILTRO.* FROM FILTRO, USU_FIL WHERE USU_FIL.ID_USU="+id+" AND USU_FIL.ID_FIL=FILTRO.FIL_ID";
-            ArrayList<Filtro> listaFiltrosBD =consultarFiltrosBD(query);
-
-            ArrayList<Filtro> listaFiltrosNuevos=contenedor.getListaFiltros();
-
-            ArrayList<Integer> listaInsertsBD= new ArrayList<Integer>();
-            ArrayList<Integer> listaDeleteBD= new ArrayList<Integer>();
-            for( int i = 0 ; i < listaFiltrosNuevos.size() ; i++ ){
-                if (!(listaFiltrosBD.contains(listaFiltrosNuevos.get(i)))) {
-                    listaInsertsBD.add(listaFiltrosNuevos.get(i).getId());
-                }
-            }
-            for( int i = 0 ; i < listaFiltrosBD.size() ; i++ ){
-                if (!(listaFiltrosNuevos.contains(listaFiltrosBD.get(i)))) {
-                    listaDeleteBD.add(listaFiltrosBD.get(i).getId());
-                }
-            }
-
-            for( int i = 0 ; i < listaDeleteBD.size() ; i++ ){
-                String transDelete="DELETE FROM USU_FIL WHERE ID_USU="+id+" AND ID_FIL="+listaDeleteBD.get(i);
-                ejecutarEnBD(transDelete);
-            }
-            for( int i = 0 ; i < listaInsertsBD.size() ; i++ ){
-                String transInserts="INSERT INTO USU_FIL(ID_USU,ID_FIL) VALUES ("+id+","+listaInsertsBD.get(i)+")";
-                ejecutarEnBD(transInserts);
-            }
-
-            return gson.toJson(estado);
-
-
-        } catch(Exception e) {
-            return e.getMessage();
-        }
     }
 
 
