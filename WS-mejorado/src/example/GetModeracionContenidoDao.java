@@ -50,14 +50,14 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
 
             try{
                 conn=getBdConnect();
-                String query = "SELECT * FROM FILTRO, USU_FIL WHERE FILTRO.FIL_ID=USU_FIL.ID_FIL AND USU_FIL.ID_USU=1";
+                String query = "SELECT * FROM FILTRO, USU_FIL WHERE FILTRO.FIL_ID=USU_FIL.ID_FIL AND USU_FIL.ID_USU="+Integer.toString(id);
                ps = conn.prepareStatement(query);
                rs = ps.executeQuery();
 
                 while(rs.next()){
 
                     resultado = (Filtro) EntityFactory.filtro(rs.getInt("fil_id"),rs.getString("fil_tipo"),
-                            rs.getString("fil_descricion"));
+                            rs.getString("fil_descripcion"));
                     listaFiltros.add(resultado);
                 }
                 rs.close();
