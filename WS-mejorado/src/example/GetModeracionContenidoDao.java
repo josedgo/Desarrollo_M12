@@ -9,11 +9,14 @@ import java.util.Date;
 import java.sql.*;
 import java.util.ArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by jose on 08/01/2018.
  */
 public class GetModeracionContenidoDao extends Dao implements IDaoModeracionContenido {
-
+private static Logger logger = LoggerFactory.getLogger(GetModeracionContenidoDao.class);
     public GetModeracionContenidoDao(){
 
     }
@@ -193,19 +196,21 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
 
 
 
-    public boolean guardarFiltrosEnBD(Integer id,  ArrayList<Filtro> listaFiltrosNuevos) throws SQLException {
+    public boolean guardarFiltrosEnBD(Integer id,  ArrayList<Filtro> listaFiltrosNuevos) throws SQLException, VIUCABException {
         ArrayList<Filtro> listaFiltrosBD= new ArrayList<>();
         ArrayList<Integer> listaInsertsBD= new ArrayList<>();
         ArrayList<Integer> listaDeleteBD= new ArrayList<>();
-        Connection conn= Sql.getConInstance();
-        PreparedStatement ps;
+        Connection conn= null;
+        PreparedStatement ps=null;
+        ResultSet rs = null;
+
         boolean estado=false;
 
         try{
             String query ="SELECT FILTRO.* FROM FILTRO, USU_FIL WHERE USU_FIL.ID_USU="+id+" AND USU_FIL.ID_FIL=FILTRO.FIL_ID";
-
+            conn = getBdConnect();
             ps = conn.prepareStatement(query);
-            ResultSet rs = ps.executeQuery();
+            rs = ps.executeQuery();
 
             while(rs.next()){
                 Filtro resultado = (Filtro) EntityFactory.filtro(rs.getInt("fil_id"),rs.getString("fil_tipo"),
@@ -239,7 +244,11 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
 
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
+        } catch (Exception e){
+            logger.error("Metodo: {} {}","guardarFiltrosEnBD",e.toString());
+            throw  new VIUCABException(e);
+
+        } finally{
             Sql.bdClose(conn);
         }
 

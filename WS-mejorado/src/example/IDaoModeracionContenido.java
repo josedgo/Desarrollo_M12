@@ -12,6 +12,6 @@ public interface IDaoModeracionContenido extends IDao {
     public boolean compararPassword(Integer id, String password) throws SQLException;
     public ArrayList<Video> buscarVideosPermitidos(Integer id) throws SQLException;
     public ArrayList<Video> buscarYFiltrarVideos(Integer id,ArrayList<Video> listaVideos ) throws SQLException;
-    public boolean guardarFiltrosEnBD(Integer id,  ArrayList<Filtro> listaFiltrosNuevos) throws SQLException;
+    public boolean guardarFiltrosEnBD(Integer id,  ArrayList<Filtro> listaFiltrosNuevos) throws SQLException, VIUCABException;
 
 }

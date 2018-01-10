@@ -35,22 +35,24 @@ export class ConfigContenidoPage {
   maqui:boolean=false;
   infa:boolean=false;
 
-    reggae ={id:1,tipo:'filtro-simple',descripcion:'reggeton',valor:this.contenidoReggaeton};
-    terrorismo ={id:2,tipo:'filtro-simple',descripcion:'terrorismo',valor:this.contenidoTerrorismo};
-    terror ={id:3,tipo:'filtro-simple',descripcion:'terror',valor:this.contenidoTerror};
-    sexo ={id:4,tipo:'filtro-simple',descripcion:'sexo',valor:this.contenidoSexo};
-    porno ={id:5,tipo:'filtro-simple',descripcion:'porno',valor:this.contenidoPornografico};
-    sangriento ={id:6,tipo:'filtro-simple',descripcion:'sangriento',valor:this.contenidoSangriento};
-    discriminacion ={id:10,tipo:'filtro-simple',descripcion:'descriminacion',valor:this.discrimina};
-   religion ={id:11,tipo:'filtro-simple',descripcion:'religion',valor:this.religio};
-   politica ={id:12,tipo:'filtro-simple',descripcion:'politica',valor:this.politicab};
+  reggae ={id:1,tipo:"filtro-simple",descripcion:"Contenido Musical - Reggaeton",valor:this.contenidoReggaeton};
+  terrorismo ={id:2,tipo:"filtro-simple",descripcion:"Contenido Terrorismo",valor:this.contenidoTerrorismo};
+  terror ={id:3,tipo:"filtro-simple",descripcion:"Contenido Terror",valor:this.contenidoTerror};
+  sexo ={id:4,tipo:"filtro-simple",descripcion:"Contenido Sexo",valor:this.contenidoSexo};
+  porno ={id:5,tipo:"filtro-simple",descripcion:"Contenido Pornografico",valor:this.contenidoPornografico};
+  sangriento ={id:6,tipo:"filtro-simple",descripcion:"Contenido Sangriento",valor:this.contenidoSangriento};
 
-    parental ={id:7,tipo:'estructura',descripcion:'control - parental',valor:this.controlParental};
-    perfil ={id:9,tipo:'estructura',descripcion:'perfil adulto',valor:this.perfilAdulto};
-    infantil ={id:13,tipo:'estructura',descripcion:'perfil infantil',valor:this.infa};
+  parental ={id:7,tipo:"estructura",descripcion:"Control Parental",valor:this.controlParental};
+  violenciaa ={id:8,tipo:"filtro-simple",descripcion:"Violencia",valor:this.violencia};
 
-    violenciaa ={id:8,tipo:'filtro-simple',descripcion:'Violencia',valor:this.violencia};
-    maquillaje={id:13,tipo:'filtro-simple',descripcion:'maquillaje',valor:this.maqui};
+  perfil ={id:9,tipo:"estructura",descripcion:"Perfil",valor:this.perfilAdulto};
+  discriminacion ={id:10,tipo:"filtro-simple",descripcion:"Control Parental",valor:this.discrimina};
+
+
+  religion ={id:11,tipo:"filtro-simple",descripcion:"",valor:this.religio};
+  politica ={id:12,tipo:"filtro-simple",descripcion:"politica",valor:this.politicab};
+  infantil ={id:13,tipo:"estructura",descripcion:"perfil infantil",valor:this.infa};
+  maquillaje={id:13,tipo:"filtro-simple",descripcion:"maquillaje",valor:this.maqui};
 
     filtros =[];
 

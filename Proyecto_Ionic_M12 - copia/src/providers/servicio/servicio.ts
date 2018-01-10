@@ -32,7 +32,7 @@ export class ServicioProvider {
      alert("");
       return new Promise ((resolve, reject) => {
         alert("enviado filtros...");
-      this.http.post("http://localhost:8080/WS_mejorado_war_exploded/Configuracion/guardarFiltrosDeUsuario", postParams, options)
+      this.http.post("http://localhost:8080/WS_mejorado_war_exploded//guardarFiltrosDeUsuario", postParams, options)
         .subscribe(data => {
           console.log(data);
          }, error => {
