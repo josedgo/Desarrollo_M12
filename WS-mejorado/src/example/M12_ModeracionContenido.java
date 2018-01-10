@@ -10,7 +10,7 @@ import java.sql.Connection;
 public class M12_ModeracionContenido {
 
     Gson gson = new Gson();
-    Connection conn = Sql.getConInstance();
+    //Connection conn = Sql.getConInstance();
 
     @GET
     @Path("/cargarFiltros")
