@@ -2,7 +2,7 @@ package example;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class ContenedorIdListaVideos implements Serializable{
+public class ContenedorIdListaVideos extends Entity implements Serializable{
     private Integer id;
     private ArrayList<Video> listaVideos;
 

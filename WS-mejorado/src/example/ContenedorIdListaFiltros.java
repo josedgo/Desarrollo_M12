@@ -3,7 +3,7 @@ package example;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class ContenedorIdListaFiltros implements Serializable{
+public class ContenedorIdListaFiltros extends Entity implements Serializable{
     private Integer id;
     private ArrayList<Filtro> listaFiltros;
 

@@ -196,15 +196,20 @@ private static Logger logger = LoggerFactory.getLogger(GetModeracionContenidoDao
 
 
 
-    public boolean guardarFiltrosEnBD(Integer id,  ArrayList<Filtro> listaFiltrosNuevos) throws SQLException, VIUCABException {
+    public boolean guardarFiltrosEnBD(Integer id,  ArrayList<Filtro> listaFiltros) throws SQLException, VIUCABException {
+        ArrayList<Filtro> listaFiltrosNuevos= new ArrayList<>();
         ArrayList<Filtro> listaFiltrosBD= new ArrayList<>();
         ArrayList<Integer> listaInsertsBD= new ArrayList<>();
         ArrayList<Integer> listaDeleteBD= new ArrayList<>();
         Connection conn= null;
         PreparedStatement ps=null;
         ResultSet rs = null;
-
         boolean estado=false;
+
+        //Identifica cuales son los filtros marcados por el usuario en la app
+        for (int i=0;i<listaFiltros.size(); i++){
+            if (listaFiltros.get(i).isValor()==true){listaFiltrosNuevos.add(listaFiltros.get(i));}
+        }
 
         try{
             String query ="SELECT FILTRO.* FROM FILTRO, USU_FIL WHERE USU_FIL.ID_USU="+id+" AND USU_FIL.ID_FIL=FILTRO.FIL_ID";
