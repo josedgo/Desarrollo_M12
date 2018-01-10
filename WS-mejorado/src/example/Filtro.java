@@ -14,6 +14,13 @@ public class Filtro extends Entity{
 
     }
 
+    public Filtro(Integer id, String tipo, String descripcion) {
+        this.id = id;
+        this.tipo = tipo;
+        this.descripcion = descripcion;
+
+    }
+
     public Filtro(Integer id, String tipo, String descripcion, boolean valor) {
         this.id = id;
         this.tipo = tipo;

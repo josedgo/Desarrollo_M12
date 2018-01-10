@@ -55,9 +55,9 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
 
 
 
-                   resultado = (Filtro) EntityFactory.filtro(1,"palbo","caulqirvaina",true);
+                   resultado = (Filtro) EntityFactory.filtro(1,"palbo","caulqirvaina");
                     listaFiltros.add(resultado);
-                    resultado = (Filtro) EntityFactory.filtro(1,"palbo","caulqirvaina",true);
+                    resultado = (Filtro) EntityFactory.filtro(1,"palbo","caulqirvaina");
                     listaFiltros.add(resultado);
                    //resultado = new Filtro(fil_id,fil_tipo,fil_descripcion,true);
 
@@ -207,7 +207,7 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
 
             while(rs.next()){
                 Filtro resultado = (Filtro) EntityFactory.filtro(rs.getInt("fil_id"),rs.getString("fil_tipo"),
-                        rs.getString("fil_descripcion"),rs.getBoolean("fil_valor"));
+                        rs.getString("fil_descripcion"));
                 listaFiltrosBD.add(resultado);
             }
 

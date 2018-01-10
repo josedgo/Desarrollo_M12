@@ -13,8 +13,8 @@ public class EntityFactory
 
     //M12
 
-    static public Entity filtro (int id, String tipo, String descripcion,boolean valor){
-        return new Filtro(id,tipo,descripcion,valor);
+    static public Entity filtro (int id, String tipo, String descripcion){
+        return new Filtro(id,tipo,descripcion);
     }
 
     static public Entity video(Integer id, String titulo, String descripcion, String imagen, String url, Date fecha, Integer visitas, Integer usuario){
