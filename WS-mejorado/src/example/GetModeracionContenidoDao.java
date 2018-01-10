@@ -42,18 +42,22 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
     public ArrayList<Filtro> buscarFiltros(Integer id) throws SQLException {
 
             ArrayList<Filtro> listaFiltros= new ArrayList<>();
-            Connection conn= Sql.getConInstance();
+            Connection conn= null;
+        PreparedStatement ps=null;
+        ResultSet rs=null;
             Filtro resultado;
 
+
             try{
-                String query = "SELECT * FROM FILTRO, USU_FIL WHERE FILTRO.FIL_ID=USU_FIL.ID_FIL AND USU_FIL.ID_USU="+id;
-                PreparedStatement ps = conn.prepareStatement(query);
-                ResultSet rs = ps.executeQuery();
+                conn=getBdConnect();
+                String query = "SELECT * FROM FILTRO, USU_FIL WHERE FILTRO.FIL_ID=USU_FIL.ID_FIL AND USU_FIL.ID_USU=1";
+               ps = conn.prepareStatement(query);
+               rs = ps.executeQuery();
 
                 while(rs.next()){
 
                     resultado = (Filtro) EntityFactory.filtro(rs.getInt("fil_id"),rs.getString("fil_tipo"),
-                            rs.getString("fil_descripcion"));
+                            rs.getString("fil_descricion"));
                     listaFiltros.add(resultado);
                 }
                 rs.close();

@@ -16,6 +16,7 @@ public class Init extends Application{
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
         h.add( M12_ModeracionContenido.class );
+        System.out.println("fdfdsf");
         return h;
     }
 }
