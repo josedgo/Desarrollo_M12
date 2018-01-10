@@ -49,9 +49,9 @@ export class ConfigContenidoPage {
   discriminacion ={id:10,tipo:"filtro-simple",descripcion:"Control Parental",valor:this.discrimina};
 
 
-  religion ={id:11,tipo:"filtro-simple",descripcion:"",valor:this.religio};
-  politica ={id:12,tipo:"filtro-simple",descripcion:"politica",valor:this.politicab};
-  infantil ={id:13,tipo:"estructura",descripcion:"perfil infantil",valor:this.infa};
+
+  politica ={id:11,tipo:"filtro-simple",descripcion:"politica",valor:this.politicab};
+  infantil ={id:12,tipo:"estructura",descripcion:"perfil infantil",valor:this.infa};
   maquillaje={id:13,tipo:"filtro-simple",descripcion:"maquillaje",valor:this.maqui};
 
     filtros =[];
@@ -68,7 +68,7 @@ export class ConfigContenidoPage {
      // this.guardarConfig();
       //console.log("Se ejecutó Guardar Configuración... ");
     this.filtros= [this.reggae,this.terrorismo,this.terror,this.sexo,this.porno,this.sangriento,this.parental,this.violenciaa,this.perfil,
-    this.discriminacion,this.maquillaje,this.politica,this.religion,this.infantil];
+    this.discriminacion,this.maquillaje,this.politica,this.infantil];
     console.log(this.filtros);
     this.guardarConfig();
     }
