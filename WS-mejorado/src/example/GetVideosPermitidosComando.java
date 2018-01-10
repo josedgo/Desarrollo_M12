@@ -4,7 +4,7 @@ package example;
 import java.util.ArrayList;
 
 /**
- * Created by jose on 08/11/2017.
+ * Created by Pablo, Jose and Karem on 07/01/2018.
  */
 public class GetVideosPermitidosComando extends Command {
 
@@ -16,11 +16,19 @@ public class GetVideosPermitidosComando extends Command {
         this.id=id;
     }
 
+    /**
+     * Obtiene el resultado de la busqueda de los videos de permitidos, que estan almacenados en _resultado
+     * @return lista de videos
+     */
     public ArrayList<Video> getVideosPermitidos()
     {
         return _resultado;
     }
 
+    /**
+     * Metodo que realiza la llamada a el patron DAO en la clase GetModeracionContenidoDao
+     * para almacenar los datos obtenidos en la fabrica, en la variable _resultado.
+     */
     @Override
     public void execute() {
         try {

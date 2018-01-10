@@ -2,6 +2,9 @@ package example;
 
 import java.util.Date;
 
+/**
+ * Created by Pablo, Jose and Karem on 07/01/2018.
+ */
 public class Video extends Entity{
     private Integer id;
     private String titulo;

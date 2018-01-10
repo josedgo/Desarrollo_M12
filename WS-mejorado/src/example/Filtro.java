@@ -4,6 +4,9 @@ package example;
 
 import java.io.Serializable;
 
+/**
+ * Created by Pablo, Jose and Karem on 07/01/2018.
+ */
 public class Filtro extends Entity{
     private Integer id;
     private String tipo;

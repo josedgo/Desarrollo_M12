@@ -7,6 +7,10 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
+
+/**
+ * Created by Pablo, Jose and Karem on 07/01/2018.
+ */
 //Defines the base URI for all resource URIs.
 @ApplicationPath("/")
 //The java class declares root resource and provider classes
