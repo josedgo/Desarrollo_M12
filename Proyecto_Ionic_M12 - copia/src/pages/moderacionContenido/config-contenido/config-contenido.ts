@@ -46,7 +46,7 @@ export class ConfigContenidoPage {
   violenciaa ={id:8,tipo:"filtro-simple",descripcion:"Violencia",valor:this.violencia};
 
   perfil ={id:9,tipo:"estructura",descripcion:"Perfil",valor:this.perfilAdulto};
-  discriminacion ={id:10,tipo:"filtro-simple",descripcion:"Control Parental",valor:this.discrimina};
+  discriminacion ={id:10,tipo:"filtro-simple",descripcion:"discriminacion",valor:this.discrimina};
 
 
 
