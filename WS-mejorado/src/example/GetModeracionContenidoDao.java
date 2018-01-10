@@ -41,50 +41,39 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
 
     public ArrayList<Filtro> buscarFiltros(Integer id) throws SQLException {
 
-        ArrayList<Filtro> listaFiltros= new ArrayList<>();
-        Connection conn= null;
-        Filtro resultado;
-        FileWriter fstream = null;
+            ArrayList<Filtro> listaFiltros= new ArrayList<>();
+            Connection conn= Sql.getConInstance();
+            Filtro resultado;
 
+            try{
+                String query = "SELECT * FROM FILTRO, USU_FIL WHERE FILTRO.FIL_ID=USU_FIL.ID_FIL AND USU_FIL.ID_USU="+id;
+                PreparedStatement ps = conn.prepareStatement(query);
+                ResultSet rs = ps.executeQuery();
 
+                while(rs.next()){
 
-
-
-                   //int fil_id = rs.getInt("fil_id");
-                   //String fil_tipo = rs.getString("fil_tipo");
-
-
-
-                   resultado = (Filtro) EntityFactory.filtro(1,"palbo","caulqirvaina");
+                    resultado = (Filtro) EntityFactory.filtro(rs.getInt("fil_id"),rs.getString("fil_tipo"),
+                            rs.getString("fil_descripcion"));
                     listaFiltros.add(resultado);
-                    resultado = (Filtro) EntityFactory.filtro(1,"palbo","caulqirvaina");
-                    listaFiltros.add(resultado);
-                   //resultado = new Filtro(fil_id,fil_tipo,fil_descripcion,true);
+                }
+                rs.close();
 
+            } catch(SQLException e) {
+                e.printStackTrace();
+            }
+            finally {
+                Sql.bdClose(conn);
+            }
 
-
-                    try {
-                        fstream = new FileWriter("C:\\Users\\Pablo\\Desktop\\ee.txt", true);
-                        BufferedWriter out = new BufferedWriter(fstream);
-                        for(int i = 0; i<listaFiltros.size();i++){
-                            out.write(listaFiltros.get(i).getTipo()+"\n");
-                        }
-                        out.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-
-
-
-
-
-        return listaFiltros;
+            return listaFiltros;
     }
+
+
+
 
     public boolean compararPassword(Integer id, String password) throws SQLException {
 
-        Connection conn= getConInstance();
+        Connection conn= Sql.getConInstance();
         boolean acceso = false;
         String query = "SELECT USU_CLAVE FROM  USUARIO WHERE USU_ID=" + id;
 
@@ -110,7 +99,7 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
 
      public ArrayList<Video> buscarVideosPermitidos(Integer id) throws SQLException {
          ArrayList<Video> listaVideos=new ArrayList<>();
-         Connection conn= getConInstance();
+         Connection conn= Sql.getConInstance();
 
          String query ="SELECT VIDEO.* FROM VIDEO "+
                  "WHERE VIDEO.VID_ID NOT IN (SELECT DISTINCT VIDEO.VID_ID FROM VIDEO, USUARIO, FILTRO, CAT_FIL_ETIQ, CATEGORIA, VIDEO_CAT, ETIQUETA, VIDEO_ETIQ, USU_FIL "+
@@ -150,7 +139,7 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
     public ArrayList<Video> buscarYFiltrarVideos(Integer id,  ArrayList<Video> listaVideos) throws SQLException {
         ArrayList<Video> listaVideosPermitidos=new ArrayList<>();
         ArrayList<Video> listaVideosFiltrados= new ArrayList<>();
-        Connection conn= getConInstance();
+        Connection conn= Sql.getConInstance();
 
         String query ="SELECT DISTINCT VIDEO.* FROM VIDEO "+
                 "WHERE VIDEO.VID_ID NOT IN (SELECT DISTINCT VIDEO.VID_ID FROM VIDEO, USUARIO, FILTRO, CAT_FIL_ETIQ, CATEGORIA, VIDEO_CAT, ETIQUETA, VIDEO_ETIQ, USU_FIL "+
@@ -195,7 +184,7 @@ public class GetModeracionContenidoDao extends Dao implements IDaoModeracionCont
         ArrayList<Filtro> listaFiltrosBD= new ArrayList<>();
         ArrayList<Integer> listaInsertsBD= new ArrayList<>();
         ArrayList<Integer> listaDeleteBD= new ArrayList<>();
-        Connection conn= getConInstance();
+        Connection conn= Sql.getConInstance();
         PreparedStatement ps;
         boolean estado=false;
 
