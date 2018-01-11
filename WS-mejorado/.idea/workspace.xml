@@ -20,19 +20,9 @@
       <file leaf-file-name="GetModeracionContenidoDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/example/GetModeracionContenidoDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="3247">
               <caret line="205" column="28" lean-forward="false" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="28" />
-              <folding>
-                <marker date="1515571735836" expanded="true" signature="1221:1305" ph="SELECT * FRO... FILTRO" />
-                <marker date="1515571735836" expanded="true" signature="2115:2159" ph="SELECT USU_C... USUARIO" />
-                <marker date="1515571735836" expanded="true" signature="2933:3890" ph="SELECT VIDEO... VIDEO" />
-                <marker date="1515571735836" expanded="true" signature="3007:3576" ph="SELECT DISTI... VIDEO" />
-                <marker date="1515571735836" expanded="true" signature="3640:3889" ph="SELECT VIDEO... VIDEO" />
-                <marker date="1515571735836" expanded="true" signature="5014:5981" ph="SELECT DISTI... VIDEO" />
-                <marker date="1515571735836" expanded="true" signature="5096:5661" ph="SELECT DISTI... VIDEO" />
-                <marker date="1515571735836" expanded="true" signature="5724:5980" ph="SELECT DISTI... VIDEO" />
-                <marker date="1515571735836" expanded="true" signature="7721:7818" ph="SELECT FILTR... FILTRO" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -40,11 +30,9 @@
       <file leaf-file-name="TEST_M12.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/example/TEST_M12.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="52" column="63" lean-forward="false" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/example/FiltrarVideosComando.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+              <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -62,8 +50,8 @@
       <file leaf-file-name="EntityFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/example/EntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="272">
+              <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
               <folding>
                 <element signature="e#262#263#0" expanded="true" />
                 <element signature="e#316#317#0" expanded="true" />
@@ -86,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/example/ContenedorIdListaVideos.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="6" selection-end-column="41" />
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="6" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -105,7 +93,7 @@
       <file leaf-file-name="M12_ModeracionContenido.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/example/M12_ModeracionContenido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1466">
+            <state relative-caret-position="1530">
               <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -180,7 +168,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="9" />
     <option name="width" value="1361" />
     <option name="height" value="726" />
@@ -200,10 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,12 +216,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../postgresql-42.1.4.jre7.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ViUCAB/viucab_maven/src/main/lib/junit-4.12.jar!/" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.3246154" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -259,6 +247,27 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
     <configuration name="GlassFish 5.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WS_mejorado_war_exploded" />
       <deployment>
@@ -315,27 +324,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -355,12 +343,6 @@
       </option>
       <envs />
       <patterns />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -396,6 +378,12 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -417,18 +405,19 @@
       <workItem from="1515566555943" duration="8043000" />
       <workItem from="1515579505422" duration="2798000" />
       <workItem from="1515569462359" duration="3605000" />
+      <workItem from="1515630369689" duration="324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41836000" />
+    <option name="totallyTimeSpent" value="42160000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="0" width="1361" height="726" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10393701" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -436,25 +425,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2992126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37115073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20371747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -470,21 +458,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/example/M12_ModeracionContenido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/example/GuardarFiltrosComando.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/example/TEST_M12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/example/GetModeracionContenidoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515571735836" expanded="true" signature="1221:1305" ph="SELECT * FRO... FILTRO" />
-            <marker date="1515571735836" expanded="true" signature="2115:2159" ph="SELECT USU_C... USUARIO" />
-            <marker date="1515571735836" expanded="true" signature="2933:3890" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3007:3576" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3640:3889" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5014:5981" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5096:5661" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5724:5980" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="7721:7818" ph="SELECT FILTR... FILTRO" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,17 +530,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515571735836" expanded="true" signature="1221:1305" ph="SELECT * FRO... FILTRO" />
-            <marker date="1515571735836" expanded="true" signature="2115:2159" ph="SELECT USU_C... USUARIO" />
-            <marker date="1515571735836" expanded="true" signature="2933:3890" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3007:3576" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3640:3889" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5014:5981" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5096:5661" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5724:5980" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="7721:7818" ph="SELECT FILTR... FILTRO" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -594,17 +588,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515571735836" expanded="true" signature="1221:1305" ph="SELECT * FRO... FILTRO" />
-            <marker date="1515571735836" expanded="true" signature="2115:2159" ph="SELECT USU_C... USUARIO" />
-            <marker date="1515571735836" expanded="true" signature="2933:3890" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3007:3576" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3640:3889" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5014:5981" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5096:5661" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5724:5980" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="7721:7818" ph="SELECT FILTR... FILTRO" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -638,17 +622,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515571735836" expanded="true" signature="1221:1305" ph="SELECT * FRO... FILTRO" />
-            <marker date="1515571735836" expanded="true" signature="2115:2159" ph="SELECT USU_C... USUARIO" />
-            <marker date="1515571735836" expanded="true" signature="2933:3890" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3007:3576" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3640:3889" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5014:5981" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5096:5661" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5724:5980" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="7721:7818" ph="SELECT FILTR... FILTRO" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -666,10 +640,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515507637731" expanded="true" signature="3280:3364" ph="SELECT * FRO... FILTRO" />
-            <marker date="1515507637731" expanded="true" signature="4316:4360" ph="SELECT USU_C... USUARIO" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -839,14 +810,14 @@
     <entry file="file://$PROJECT_DIR$/src/example/ContenedorIdListaVideos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="6" selection-end-column="41" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="6" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/example/M12_ModeracionContenido.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1466">
+        <state relative-caret-position="1530">
           <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -858,51 +829,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2084">
           <caret line="222" column="28" lean-forward="false" selection-start-line="222" selection-start-column="28" selection-end-line="222" selection-end-column="28" />
-          <folding>
-            <marker date="1515507637731" expanded="true" signature="3280:3364" ph="SELECT * FRO... FILTRO" />
-            <marker date="1515507637731" expanded="true" signature="4316:4360" ph="SELECT USU_C... USUARIO" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/example/FiltrarVideosComando.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/example/TEST_M12_ModeracionContenido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/example/TEST_M12_ModeracionContenido.java" />
     <entry file="file://$PROJECT_DIR$/src/example/GetModeracionContenidoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="3247">
           <caret line="205" column="28" lean-forward="false" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="28" />
-          <folding>
-            <marker date="1515571735836" expanded="true" signature="1221:1305" ph="SELECT * FRO... FILTRO" />
-            <marker date="1515571735836" expanded="true" signature="2115:2159" ph="SELECT USU_C... USUARIO" />
-            <marker date="1515571735836" expanded="true" signature="2933:3890" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3007:3576" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="3640:3889" ph="SELECT VIDEO... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5014:5981" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5096:5661" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="5724:5980" ph="SELECT DISTI... VIDEO" />
-            <marker date="1515571735836" expanded="true" signature="7721:7818" ph="SELECT FILTR... FILTRO" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/example/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="272">
+          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding>
             <element signature="e#262#263#0" expanded="true" />
             <element signature="e#316#317#0" expanded="true" />
@@ -912,11 +863,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/example/TEST_M12.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="200">
+          <caret line="52" column="63" lean-forward="false" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +900,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>gson-2.8.2</last-edited>
+          <last-edited>junit-4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

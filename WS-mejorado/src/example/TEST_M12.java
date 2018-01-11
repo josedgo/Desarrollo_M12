@@ -1,6 +1,8 @@
 package example;
 
 import java.util.ArrayList;
+import java.util.Date;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -49,10 +51,11 @@ public class TEST_M12 {
     //Prueba si el retorno del método filtrarVideos es no nulo para el usuario de id=1
     @Test
     public void pruebaRetornoFiltrarVideos() throws Exception {
+        Date d = new Date();
         ArrayList<Video> videosEntrada= new ArrayList<>();
-        videosEntrada.add((Video) EntityFactory.video(1,"video1" ,"DesVideo1", "dcsddhybcjnmcs", "idcoincdomsc", "1998-12-01", 1000, 1));
-        videosEntrada.add((Video) EntityFactory.video(2,"video2" ,"DesVideo2", "dcsdvdsmcs", "idfewweemsc", "2010-12-01", 2000, 1));
-        videosEntrada.add((Video) EntityFactory.video(3,"video3" ,"DesVideo3", "wefwefwe", "idcoin43r4edwdcsc", "2000-12-01", 3000, 1));
+        videosEntrada.add((Video) EntityFactory.video(1,"video1" ,"DesVideo1", "dcsddhybcjnmcs", "idcoincdomsc", d, 1000, 1));
+        videosEntrada.add((Video) EntityFactory.video(2,"video2" ,"DesVideo2", "dcsdvdsmcs", "idfewweemsc", d, 2000, 1));
+        videosEntrada.add((Video) EntityFactory.video(3,"video3" ,"DesVideo3", "wefwefwe", "idcoin43r4edwdcsc", d, 3000, 1));
         Entity contenedor= EntityFactory.contenedorIdListaVideos(1,videosEntrada);
         Command commadModeracionContenido = CommandsFactory.instanciarFiltrarVideosComando((ContenedorIdListaVideos) contenedor);
         FiltrarVideosComando cmd = (FiltrarVideosComando) commadModeracionContenido;
